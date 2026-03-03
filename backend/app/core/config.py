@@ -12,6 +12,9 @@ class Settings(BaseSettings):
     VERSION: str = "0.1.0"
     DEBUG: bool = False
 
+    SUPABASE_URL: str
+    SUPABASE_KEY: str
+
 
 @lru_cache
 def get_settings() -> Settings:
